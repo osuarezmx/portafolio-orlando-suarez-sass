@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orlando Suarez | Desarrollador Web</title>
+        <meta name="descrition" content="Diseñador grafico y desarrollador front-end">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <!--Estilos-->
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+    </head>
+    <body>
+    
+        <header class="header">
+            <div class="contenedor">
+                <div class="navegacion">
+                        <a href="../index.html" class="navegacion__logo">orlando suárez</a>
+                        <button class="menu-movil" aria-controls="menu" aria-expanded="false">
+                            <span class="sr-only">Menu</span>
+                        </button>
+                    <nav class="navegacion__menu">
+                        <ul id="menu" data-visible="false" class="menu">
+                            <li class="menu__enlace">
+                                <a href="../index.html" class="enlace enlace--header">inicio</a>
+                            </li>
+                            <li class="menu__enlace">
+                                <a href="../pages/proyectos.html" class="enlace enlace--header">proyectos</a>
+                            </li>
+                            <li class="menu__enlace">
+                                <a href="#" class="enlace enlace--header">contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+            <main>
+                <section class="proyectos">
+                    <div class="contenedor">
+                        <div class="proyectos__titulo">
+                            <h1 class="heading heading--azul">Lorem ipsum dolor sit amet</h1>
+                            <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto officiis inventore, iusto, perferendis nisi ex et corporis dolore maiores rem, voluptate aspernatur sequi temporibus.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contenedor">
+                    <form name="form" action="" method="post" class="formulario">
+                        <div class="formulario__columnas">
+                            <div class="formulario__campo">
+                                <input 
+                                class="campo__field"
+                                type="text" 
+                                name="nombre" 
+                                id="nombre" 
+                                placeholder="Tu Nombre"
+                                required>
+                            </div>
+                            <div class="formulario__campo">
+                                <input 
+                                class="campo__field"
+                                type="email" 
+                                name="correo" 
+                                id="correo" 
+                                placeholder="Tu Correo"
+                                required>
+                            </div>
+                        </div>
+                        <div class="formulario__columnas">
+                            <div class="formulario__campo">
+                                <input 
+                                class="campo__field"
+                                type="tel" 
+                                name="telefono" 
+                                id="telefono"
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+                                placeholder="Tu Teléfono"
+                                required>
+                            </div>
+                            <div class="formulario__campo">
+                                <input  
+                                class="campo__field"
+                                type="text" 
+                                name="asunto" 
+                                id="asunto" 
+                                placeholder="Asunto">
+                            </div>
+                        </div>
+                        <div class="formulario__campo">
+                            <textarea 
+                            class="campo__field campo__field--textarea"
+                            name="mensaje" 
+                            id="mensaje" 
+                            cols="30" 
+                            rows="10"
+                            placeholder="Tu Mensaje"></textarea>
+                        </div>
+                        <div class="formulario__campo formulario__campo-block">
+                            <input 
+                            type="submit" 
+                            value="Enviar" 
+                            class="formulario__btn">
+                        </div>
+                    </form>
+                </section>
+
+                <section class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.559908696895!2d-100.33461188456606!3d25.652727919362334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be148204cb19%3A0xd5ad5734f2fc45ea!2sEdificio%20Los%20Soles%2C%20Av%20L%C3%A1zaro%20C%C3%A1rdenas%202400%2C%20Zona%20Loma%20Larga%20Oriente%2C%2066269%20San%20Pedro%20Garza%20Garc%C3%ADa%2C%20N.L.!5e0!3m2!1ses!2smx!4v1655338925123!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </main>
+    
+            <footer class="footer">
+                <div class="contenedor">
+                    <div class="footer__columnas">
+                        <div class="footer__contacto">
+                            <a href="#" class="enlace footer__datos">812 397 3421</a>
+                            <a href="#" class="enlace footer__datos">hola@osuarez.mx</a>
+                            <p class="enlace footer__datos">Monterrey, MX</p>
+                        </div>
+                        <div class="footer__redes">
+                            <a href="https://www.behance.net/Orlandobot" class="enlace footer__datos" target="_blank">behance</a>
+                            <a href="https://www.instagram.com/ossant.mx/" class="enlace footer__datos" target="_blank">instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="../js/script.js"></script>
+    
+    </body>
+    </html>
