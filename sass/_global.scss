@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+.contenedor {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.enlace {
+    font-family: $fuenteTexto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $colorBlanco;
+    transition: $btnAnimacion;
+
+    &:hover {
+        color: $colorSecundario;
+    }
+}
+.heading {
+    font-family: $fuenteHeading;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+.heading--azul {
+    color: $colorPrincipal;
+}
+.texto {
+    font-family: $fuenteTexto;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}

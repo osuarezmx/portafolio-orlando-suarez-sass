@@ -1,0 +1,81 @@
+/**------CTA Footer-------**/
+.footer {
+    background-color: $colorPrincipal;
+    padding: 45px 0;
+
+    &__cta {
+        width: 50%;
+        padding-bottom: 60px;
+    }
+    
+    &__texto {
+        font-size: 5rem;
+        color: #fff;
+    }
+    
+    &__texto--claro {
+        font-size: 5rem;
+        color: $colorSecundario;
+        font-weight: 700;
+        transition: $btnAnimacion;
+    }
+    
+    &__texto--claro:hover {
+        color: $colorOscuro;
+        font-size: 5.5rem;
+        border-bottom: 3px solid $colorOscuro;
+    }
+    @media (max-width:768px) {
+        &__cta {
+            width: 100%;
+        }
+    }
+
+    /**------Footer-------**/
+    &__columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        align-items: flex-start;
+    }
+
+    &__contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__redes {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+    &__datos {
+        color: $colorBlanco;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        transition: $btnAnimacion;
+    }
+
+    &__datos:hover {
+        color: $colorSecundario;
+    }
+    &__contacto &__datos-sh {
+    color: #fff;
+    }
+    @media (max-width:768px) {
+        &__columnas {
+        grid-template-columns: 1fr;
+            text-align: center;
+        }
+        &__redes {
+            padding-top: 35px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+

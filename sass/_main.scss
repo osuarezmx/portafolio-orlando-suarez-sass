@@ -1,0 +1,143 @@
+.hero {
+    background: radial-gradient(circle at bottom right, #70f8ba, #3834f0, #f06543);
+    background-size: 400% 400%;
+    animation: gradient 10s ease-out infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__contenido {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      align-items: flex-end;
+      padding: 30px 0;
+    }
+
+    &__heading {
+      font-size: 12rem;
+      color: #fff;
+      letter-spacing: 1rem;
+      line-height: 1.2;
+    }
+
+    &__texto {
+      font-size: 1.3rem;
+      color: #fff;
+      letter-spacing: .3rem;
+      line-height: 1.8;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    &__contenido {
+        display: block;
+    }
+    &__heading {
+        font-size: 7rem;
+        letter-spacing: .5rem;
+        line-height: 1.1;
+        padding-bottom: 20px;
+    }
+}
+  
+  /**------Galería Proyectos-------**/
+  .galeria {
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+
+    .gal-1 {
+      grid-column: 1 / 4;
+      grid-row: 1;
+    }
+    
+    .gal-2 {
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+    
+    .gal-3 {
+      grid-column: 1 / 4;
+      grid-row: 3;
+    }
+    
+    .gal-4 {
+      grid-column: 1 / 4;
+      grid-row: 4;
+    }
+
+    &__articulo {
+      display: flex;
+      align-items: flex-end;
+      padding: 30px 0;
+    }
+
+    &__articulo--reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      padding: 30px 0;
+    } 
+
+    &__imagen {
+      width: 680px;
+      height: 420px;
+    }
+
+    &__contenido {
+      background-color: $colorPrincipal;
+      padding: 15px;
+      transform: translateY(0);
+      transition: $btnAnimacion;
+    }
+
+    &__contenido:hover, &__articulo--reverse &__contenido:hover {
+      transform: translateY(-20%);
+    }
+  
+    &__titulo {
+      font-size: 2.5rem;
+      color: #fff;
+      padding-bottom: 15px;
+      transition: $btnAnimacion;
+    }
+    &__contenido:hover .galeria__titulo {
+      color: $colorSecundario;
+    }
+  
+    &__categoria {
+      font-size: 1.6rem;
+      color: $colorAzulClaro;
+    }
+    @media (max-width: 900px) {
+      &__articulo, &__articulo--reverse {
+        display: block;
+      }
+  
+      &__imagen {
+          width: 100%;
+          height: auto;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
