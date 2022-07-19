@@ -305,6 +305,17 @@ template {
   display: none; }
 
 /**---------------------Normalize.css-------------------**/
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, p {
+  margin: 0; }
+
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -332,17 +343,6 @@ html {
   width: 95%;
   margin: 0 auto; }
 
-a {
-  text-decoration: none; }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h3, p {
-  margin: 0; }
-
 img {
   max-width: 100%; }
 
@@ -369,6 +369,14 @@ img {
   letter-spacing: .1rem;
   font-weight: 300;
   line-height: 2.8rem; }
+
+.btn-base, .formulario__btn {
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  transition: .3s ease; }
 
 .header {
   display: flex;
@@ -569,54 +577,41 @@ img {
 /**------Contacto-------**/
 .formulario {
   padding: 45px 20%; }
-
-.formulario__columnas {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem; }
-
-.formulario__campo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 2rem 0; }
-
-.campo__field {
-  flex: 1;
-  background-color: #eee;
-  border: none;
-  border-bottom: 0.2rem solid #3834f0;
-  padding: 1em 0 1rem 1rem;
-  color: #3834f0;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.3rem; }
-
-.campo__field::placeholder {
-  color: var(--fondo); }
-
-.campo__field--textarea {
-  height: 6em; }
-
-.formulario__campo-block {
-  display: inline-block; }
+  .formulario__columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem; }
+  .formulario__campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem 0; }
+  .formulario .campo__field {
+    flex: 1;
+    background-color: #eee;
+    border: none;
+    border-bottom: 0.2rem solid #3834f0;
+    padding: 1em 0 1rem 1rem;
+    color: #3834f0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem; }
+  .formulario::placeholder {
+    color: var(--fondo); }
+  .formulario .campo__field--textarea {
+    height: 6em; }
+  .formulario .formulario__campo-block {
+    display: inline-block; }
 
 .formulario__btn {
   background-color: #3834f0;
-  color: #fff;
-  padding: 12px 22px;
-  border: none;
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.6rem;
-  transition: .3s ease; }
-
-.formulario__btn:hover {
-  background-color: #f06543; }
+  cursor: pointer; }
+  .formulario__btn:hover {
+    background-color: #f06543; }
 
 @media (max-width: 768px) {
   .formulario {
     padding: 45px 0; }
-  .formulario__columnas {
+  __columnas {
     display: block; } }
 
 /**------Mapa-------**/

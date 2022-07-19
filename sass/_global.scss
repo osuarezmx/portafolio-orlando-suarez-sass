@@ -24,17 +24,6 @@ html {
     width: 95%;
     margin: 0 auto;
 }
-a {
-    text-decoration: none;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-h1, h2, h3, p {
-    margin: 0;
-}
 img {
     max-width: 100%;
 }
@@ -64,3 +53,12 @@ img {
     font-weight: 300;
     line-height: 2.8rem;
 }
+
+.btn-base {
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    transition: .3s ease;
+  }
