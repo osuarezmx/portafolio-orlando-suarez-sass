@@ -78,4 +78,14 @@
     }
 }
 
+$socialMedia: (
+    behance: #fff,
+    github: #1d1d1d,
+    instagram: #c92d8f,
+);
 
+@each $nombreMedia, $colorMedia in $socialMedia {
+    .link-#{$nombreMedia} {
+        color: $colorMedia;
+    }
+}

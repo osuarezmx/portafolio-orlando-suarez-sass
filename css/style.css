@@ -467,6 +467,15 @@ img {
       align-items: center;
       justify-content: center; } }
 
+.link-behance {
+  color: #fff; }
+
+.link-github {
+  color: #1d1d1d; }
+
+.link-instagram {
+  color: #c92d8f; }
+
 .hero {
   background: radial-gradient(circle at bottom right, #70f8ba, #3834f0, #f06543);
   background-size: 400% 400%;
@@ -545,7 +554,7 @@ img {
     padding: 15px;
     transform: translateY(0);
     transition: all 0.3s ease-out; }
-  .galeria__contenido:hover, .galeria__articulo--reverse .galeria__contenido:hover {
+  .galeria__contenido:hover {
     transform: translateY(-20%); }
   .galeria__titulo {
     font-size: 2.5rem;
@@ -563,6 +572,50 @@ img {
     .galeria__imagen {
       width: 100%;
       height: auto; } }
+
+/**------Servicios Tarjetas-------**/
+.servicios__contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 60px; }
+
+.servicios__card--branding {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f06543; }
+  .servicios__card--branding .servicios__lista {
+    padding-top: 15px; }
+  .servicios__card--branding .heading {
+    color: #3834f0; }
+  .servicios__card--branding .texto {
+    color: #fff; }
+
+.servicios__card--desarrollo {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #70f8ba; }
+  .servicios__card--desarrollo .servicios__lista {
+    padding-top: 15px; }
+  .servicios__card--desarrollo .heading {
+    color: #3834f0; }
+  .servicios__card--desarrollo .texto {
+    color: #2a2b2e; }
+
+.servicios__card--marketing {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #2a2b2e; }
+  .servicios__card--marketing .servicios__lista {
+    padding-top: 15px; }
+  .servicios__card--marketing .heading {
+    color: #3834f0; }
+  .servicios__card--marketing .texto {
+    color: #fff; }
+
+@media (min-width: 900px) {
+  .servicios__contenido {
+    grid-template-columns: repeat(3, 1fr); } }
 
 /**------Proyectos-------**/
 .proyectos__titulo {
@@ -611,7 +664,7 @@ img {
 @media (max-width: 768px) {
   .formulario {
     padding: 45px 0; }
-  __columnas {
+  aju__columnas {
     display: block; } }
 
 /**------Mapa-------**/

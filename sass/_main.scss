@@ -105,7 +105,7 @@
       transition: $btnAnimacion;
     }
 
-    &__contenido:hover, &__articulo--reverse &__contenido:hover {
+    &__contenido:hover {
       transform: translateY(-20%);
     }
   
@@ -115,7 +115,7 @@
       padding-bottom: 15px;
       transition: $btnAnimacion;
     }
-    &__contenido:hover .galeria__titulo {
+    &__contenido:hover &__titulo {
       color: $colorSecundario;
     }
   
@@ -135,9 +135,46 @@
     }
   }
   
+/**------Servicios Tarjetas-------**/
+.servicios__contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+@mixin card-base($fondo, $colorHeading, $colorLista) {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $fondo;
+
+  .servicios__lista {
+    padding-top: 15px;
+  }
+
+  .heading {
+    color: $colorHeading;
+  }
   
+  .texto {
+    color: $colorLista;
+  }
+}
+
+.servicios__card--branding {
+  @include card-base($colorSecundario, $colorPrincipal, $colorBlanco);
+}
   
+.servicios__card--desarrollo {
+  @include card-base($colorTerciario, $colorPrincipal, $colorOscuro);
+}
+
+.servicios__card--marketing {
+  @include card-base($colorOscuro, $colorPrincipal, $colorBlanco);
+}
   
-  
-  
-  
+@media (min-width:900px) {
+  .servicios__contenido {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
